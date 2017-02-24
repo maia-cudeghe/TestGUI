@@ -33,7 +33,7 @@ public class AbsoluteLayoutEx {
         btn2.setSize(80, 30);
         btn2.setLocation(50, 100);
 
-        shell.setText("Absolute layout");
+        shell.setText("Absolute layout fixed button pos");
         shell.setSize(300, 250);
         shell.open();
 

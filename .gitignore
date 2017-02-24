@@ -1,0 +1,2 @@
+#escludiamo le classi generate
+*.class
