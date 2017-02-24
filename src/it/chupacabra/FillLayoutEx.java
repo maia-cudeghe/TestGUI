@@ -1,5 +1,7 @@
 package it.chupacabra;
 
+import java.io.InputStream;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Device;
 import org.eclipse.swt.graphics.Image;
@@ -53,7 +55,9 @@ public class FillLayoutEx {
         Device dev = shell.getDisplay();
 
         try {
-            castle = new Image(dev, "C:\\progetti\\workspace_vwb_sviluppo\\TestGUI\\src\\it\\chupacabra\\images\\redrock.png");
+            InputStream is = this.getClass().getClassLoader().getResourceAsStream("it/chupacabra/images/redrock.png");
+            // castle = new Image(dev, "C:\\progetti\\workspace_vwb_sviluppo\\TestGUI\\src\\it\\chupacabra\\images\\redrock.png");
+            castle = new Image(dev, is);
 
         } catch (Exception e) {
 
